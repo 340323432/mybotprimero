@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>HOLA</pattern>
+	    <template>
+	        <random>
+	            <li>Bienvenid@. ¿Quieres saber cuales son las entradas o vamos a la sopa?</li>
+	            <li>Buen dia ¿Toma entrada o empieza con sopa?</li>
+	            <li>Sea bienvenid@. ¿Quiere saber que entradas de sopa tenemos?</li>
+	            <li>Muy buen dia ¿Quiere saber las entradas o quiere la sopa de una?</li>
+	        </random>
+	    </template>
+	</category>
+	<category>
+	    <pattern>ENTRADAS</pattern>
+	    <template>Tenemos palitos de apio, ensalada o fruta picada</template>
+	</category>
+	<category>
+	    <pattern>SOPA</pattern>
+	    <template>¿Quieres sopa del dia o consome?</template>
+	</category>
+	<category>
+	    <pattern>* SOPA DEL DIA</pattern>
+	    <template>
+	        <random>
+	            <li>¿Desea agregar pan a su orden?</li>
+	            <li>¿Le gustaria agregar pan a su orden?</li>
+	            <li>¿Quiere agregar pan a su orden?</li>
+	        </random>
+	    </template>
+	</category>
+	<category>
+	    <pattern>SI * PAN</pattern>
+	    <template>¿Desea algo mas o eso seria todo?</template>
+	</category>
+	<category>
+	    <pattern>SERIA TODO</pattern>
+	    <template>Su oden esta en camino</template>
+	</category>
+	<category>
+	    <pattern>* SERIA TODO</pattern>
+	    <template>Su oden esta en camino</template>
+	</category>
+	<category>
+	    <pattern>SI * ALGO MAS</pattern>
+	    <template>Hay entradas o sopas, o si desea puede terminar su orden</template>
+	</category>
+	<category>
+	    <pattern>* ORDEN</pattern>
+	    <template>Perfecto su orden sera entregada en la brevedad.</template>
+	</category>
+	<category>
+	    <pattern>* APIO</pattern>
+	    <template>
+	        <random>
+	            <li>Perfecto, ¿Seria eso todo?</li>
+	            <li>¿Desea algo mas o eso seria todo?</li>
+	        </random>
+	    </template>
+	</category>
+	<category>
+	    <pattern>* ENSALADA</pattern>
+	    <template>
+	        <random>
+	            <li>Perfecto, ¿Seria eso todo?</li>
+	            <li>¿Desea algo mas o eso seria todo?</li>
+	        </random>
+	    </template>
+	</category>
+	<category>
+	    <pattern>* FRUTA PICADA</pattern>
+	    <template>
+	        <random>
+	            <li>Perfecto, ¿Seria eso todo?</li>
+	            <li>¿Desea algo mas o eso seria todo?</li>
+	        </random>
+	    </template>
+	</category>
+	<category>
+        <pattern>* ENTRADAS</pattern>
+        <template>
+        <srai>ENTRADAS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* ENTRADA</pattern>
+        <template>
+        <srai>ENTRADAS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* SOPA</pattern>
+        <template>
+        <srai>SOPA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* SOPAS</pattern>
+        <template>
+        <srai>SOPA</srai>
+        </template>
+    </category>
+    <category>
+	    <pattern>LA * ESTA FRIA</pattern>
+	    <template>Una enorme disculpa, llevo su <star/> a calentar</template>
+	</category>
+</aiml>
